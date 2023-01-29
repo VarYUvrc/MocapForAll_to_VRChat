@@ -22,8 +22,8 @@ def quaternion_to_euler(x, y, z, w):
     return X, Y, Z
 
 def handle_message(address, *args):
-    # MocapForALlのOSCメッセージをVRChat形式に変換する
-    client = udp_client.SimpleUDPClient("192.168.xxx.xxx", 9000) # 自分のQuestのIPアドレスに要変更
+    # MocapForAllのOSCメッセージをVRChat形式に変換する
+    client = udp_client.SimpleUDPClient("192.168.xxx.xxx", 9000) # 自身のMeta QuestのIPアドレスに要変更
     address = address.replace("/VMT/Room/Unity", "/tracking/trackers")
     if int(args[0]) == 9:
         new_address_position = '/tracking/trackers/head/position'
