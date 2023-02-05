@@ -7,8 +7,9 @@ readme = "README.md"
 packages = [{include = "osc_mocap"}]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "3.8.10"
 python-osc = "^1.8.1"
+scipy = "^1.10.0"
 
 
 [tool.poetry.group.dev.dependencies]
